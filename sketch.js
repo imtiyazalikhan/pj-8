@@ -4,6 +4,7 @@ const World = Matter.World;
 const Bodies = Matter.Bodies;
 const Body = Matter.Body;
 const Render = Matter.Render;
+const constraint = Matter.constraint;
 var dustbinObj, paperObject,groundObject	
 var world;
 
@@ -50,6 +51,13 @@ function draw() {
   
   
  
+}
+function mouseDragged(){
+	Maatter.Body.setposition(aper.body,{x:mouseX,y:mouseY});
+
+}
+function mouseReleased(){
+	place.fly();
 }
 
 
